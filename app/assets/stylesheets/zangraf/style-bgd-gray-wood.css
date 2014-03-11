@@ -1,0 +1,10 @@
+
+/* -------------------- pattern :gray-jean --------------------- */
+
+body{ 
+ background:url("../pattern/gray_wood.jpg") #FFF;
+}
+
+.thumbs-up {
+ background:url("../pattern/gray_wood.jpg");
+}

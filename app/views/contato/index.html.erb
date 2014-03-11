@@ -1,0 +1,44 @@
+ 		 
+<%= form_for(@message, :url => contato_send_mail_path, :html => {:class => "form-horizontal"}) do |f| %>
+
+	<div class="control-group">
+		<div class="controls">
+			<% @message.errors.full_messages.each do |msg| %>
+			<p><%= msg %></p>
+			<% end %>
+		</div>
+	</div>
+
+
+	<div class="control-group">
+		<%= f.label :name, "Nome #{mark_required(@message, :name)}", :class => "control-label" %>
+		<div class="controls">
+			<%= f.text_field :name, :class => "input-xlarge"  %>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<%= f.label :email, "E-mail #{mark_required(@message, :email)}", :class => "control-label"  %>
+		<div class="controls">
+			<%= f.text_field :email, :class => "input-xlarge"  %>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<%= f.label :content, "Mensagem #{mark_required(@message, :content)}", :class => "control-label"  %>
+		<div class="controls">
+			<%= f.text_area :content, :rows => "5", :class => "input-block-level" %>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="controls">
+			<%= f.submit "Enviar", :class => "btn btn-warning"%>
+		</div>
+	</div>
+
+<% end %>
+
+ 
+
+	 

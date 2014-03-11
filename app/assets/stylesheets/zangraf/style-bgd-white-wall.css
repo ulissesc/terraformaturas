@@ -1,0 +1,10 @@
+
+/* -------------------- pattern :white wall --------------------- */
+
+body{ 
+ background:url("../pattern/white_wall.png") #FFF;
+}
+
+.thumbs-up {
+  background:url("../pattern/white_wall.png");
+}
