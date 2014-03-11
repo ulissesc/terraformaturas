@@ -49,6 +49,7 @@ gem 'comfortable_mexican_sofa', '~> 1.10.0'
 gem "font-awesome-rails"
 gem 'rails-i18n'
 gem 'af'
+gem 'execjs'
 
 #gem 'execjs'
 #gem 'therubyracer', :platforms => :ruby

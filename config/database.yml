@@ -18,7 +18,7 @@ development:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: sites-cms_development
+  database: terra_formaturas_development
   pool: 5
   username: postgres
   password: root
@@ -48,7 +48,7 @@ test:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: sites-cms_test
+  database: terra_formaturas_test
   pool: 5
   username: postgres
   password: root
@@ -57,7 +57,7 @@ production:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: sites-cms_production
+  database: terra_formaturas_production
   pool: 5
   username: sites-cms
   password: 123
