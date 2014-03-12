@@ -4,7 +4,7 @@ SitesCms::Application.routes.draw do
 
   # get 'contato' => 'contato#index'
 
-  # post 'contato/send_mail' => "contato#send_mail"
+  post 'contato/send_mail' => "contato#send_mail"
 
   # Make sure this routeset is defined last
   ComfortableMexicanSofa::Routing.content :path => '/', :sitemap => false

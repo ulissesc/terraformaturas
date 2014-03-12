@@ -175,6 +175,7 @@ DEPENDENCIES
   af
   coffee-rails (~> 4.0.0)
   comfortable_mexican_sofa (~> 1.10.0)
+  execjs
   font-awesome-rails
   jbuilder (~> 1.2)
   jquery-rails

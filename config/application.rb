@@ -24,6 +24,17 @@ module SitesCms
     
     config.railties_order = [ :all, ComfortableMexicanSofa::Engine ]
 
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      :address              => "mail.parseint.com.br",
+      :port                 => 25,
+      :domain               => 'parseint.com.br',
+      :user_name            => 'parseint',
+      :password             => '******',
+      :authentication       => 'plain',
+      :enable_starttls_auto =>  false  
+    }
+
   end
 end
 

@@ -1,0 +1,72 @@
+
+
+<div class="span9">
+            
+
+	<div class="span9 offset1 content">
+
+		<div class="row">	
+			<div class="hero-unit">
+			
+
+			<%= form_tag("/contato/send_mail", method: "post") do %>
+			  
+			
+						<div class="span3">
+									<fieldset>
+										<div class="clearfix">
+											<div class="input">
+												<div class="input-prepend">
+													<span class="add-on">Nome:</span>							
+													<%= text_field(:message, :name, :size => "18") %>
+												</div>
+											</div>
+										</div>
+
+										<div class="clearfix">
+											<div class="input">
+												<div class="input-prepend">
+													<span class="add-on">Email:</span>
+													<%= text_field(:message, :email, :size => "25") %>
+												</div>
+											</div>
+										</div>
+
+										<div class="clearfix">
+											<div class="input">
+												<div class="input-prepend">
+													<span class="add-on">Site &nbsp;&nbsp;:</span>
+													<%= text_field(:message, :site, :size => "25") %>
+												</div>
+											</div>
+										</div>
+									</fieldset>									
+								</div>
+								<div class="span4">
+									<fieldset>
+										<div class="clearfix">
+											<div class="input">
+												<%= text_area(:message, :content, :rows => "8", :class => "input") %>
+											 
+											</div>
+										</div>
+
+										<div class="actions">
+											<%= submit_tag("Enviar", :class => "btn btn-orange btn-red-pastel btn-steelblue btn-darkslategrey btn-large") %>
+										</div>
+									</fieldset>
+								</div>
+
+
+				<% end %>
+
+
+			</div>
+		</div>
+
+			
+	</div>
+
+</div>
+
+
