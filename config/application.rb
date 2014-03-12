@@ -30,7 +30,7 @@ module SitesCms
       :port                 => 25,
       :domain               => 'parseint.com.br',
       :user_name            => 'parseint',
-      :password             => '******',
+      :password             => '*****',
       :authentication       => 'plain',
       :enable_starttls_auto =>  false  
     }

@@ -8,8 +8,8 @@ class ContatoController < ApplicationController
 	def send_mail
 		puts " >>>> 01"
 		@message = Message.new(params[:message])
-	
-		puts " >>>> 02 NOME: #{ @message.name }"
+		@message.vindo_de = request.host
+	 
 		if @message.valid?
       		Contato.send_mail( @message ).deliver
       		flash[:notice] = "Sua mensagem foi enviada! Obrigado por entrar em contato."
