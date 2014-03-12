@@ -1,6 +1,6 @@
 class Contato < ActionMailer::Base
-  default from: "ulisses@parseint.com.br"
-  default to: "torquatro@gmail.com"
+  default from: "parseint@parseint.com.br"
+  default to: "terra.formaturas@hotmail.com"
 
   def send_mail(message)
   	body = "Nome: #{message.name}\r\nE-mail: #{message.email}\r\nMensagem: #{message.content}"
