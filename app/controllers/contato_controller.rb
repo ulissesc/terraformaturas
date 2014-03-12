@@ -12,12 +12,12 @@ class ContatoController < ApplicationController
 	 
 		if @message.valid?
       		Contato.send_mail( @message ).deliver
-      		flash[:notice] = "Sua mensagem foi enviada! Obrigado por entrar em contato."
+      		flash[:notice] = "Sua mensagem foi enviada. Obrigado por entrar em contato."
       		#redirect_to :action => 'index'
       		redirect_to "/contato"
   		else
   			puts " >>>> ERRORS: #{ @message.errors.inspect }"
-  			redirect_to "/erro"
+  			redirect_to "/contato"
   			flash[:error] = "Falha ao enviar mensagem."
   			#render :action => 'index'
   		end
